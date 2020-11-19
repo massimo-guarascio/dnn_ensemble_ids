@@ -9,4 +9,4 @@ The code is developed and maintained by Massimo Guarascio and Gianluigi Folino (
 
 First, download this repo:
 - You need to have 'python3' installed.
-- You also need to install 'numpy', 'pandas==1.0.3', and 'sklearn <=0.21', 'mlxtend', 'Keras==2.2.4' and 'tensorflow==1.14.0'.
+- You also need to install 'numpy', 'pandas==1.0.3', and 'sklearn <=0.21', 'imbalanced-learn==0.5.0', 'Keras==2.2.4' and 'tensorflow==1.14.0'.
