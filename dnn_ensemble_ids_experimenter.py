@@ -41,7 +41,7 @@ from sklearn.preprocessing.data import OneHotEncoder
 from sklearn.preprocessing.data import StandardScaler, Normalizer, minmax_scale,OneHotEncoder, MinMaxScaler, RobustScaler
 from sklearn.pipeline import Pipeline
 
-#from losses import binary_focal_loss
+from losses import *
 #from ensemble_factory import *
 
 from imblearn.under_sampling import RandomUnderSampler
