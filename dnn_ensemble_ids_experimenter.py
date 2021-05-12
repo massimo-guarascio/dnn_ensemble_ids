@@ -1201,7 +1201,7 @@ if __name__ == "__main__":
     #merge test set
     overall_test_x=x_tests[0].copy()
     overall_test_y=y_tests[0].copy()
-    for j in range(1, len(dataset_paths)):
+    for i in range(1, len(dataset_paths)):
         overall_test_x = np.vstack((overall_test_x, x_tests[i]))
         overall_test_y = np.concatenate((overall_test_y, y_tests[i]), axis=0)
         
