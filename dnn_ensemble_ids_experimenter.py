@@ -1201,9 +1201,9 @@ if __name__ == "__main__":
     #merge test set
     overall_test_x=x_tests[0].copy()
     overall_test_y=y_tests[0].copy()
-    for i in range(1, len(dataset_paths)):
-        overall_test_x = np.vstack((overall_test_x, x_tests[i]))
-        overall_test_y = np.concatenate((overall_test_y, y_tests[i]), axis=0)
+    for j in range(1, len(dataset_paths)):
+        overall_test_x = np.vstack((overall_test_x, x_tests[j]))
+        overall_test_y = np.concatenate((overall_test_y, y_tests[j]), axis=0)
         
         
     if evaluate_base_models:
@@ -1261,7 +1261,7 @@ if __name__ == "__main__":
                 f.write(result_string+'\n')
             print(seed, "\t","overall_data", "\t", model_names[j]+"_"+loss_type,"\t", report_map['1.0']['precision'], "\t", report_map['1.0']['recall'], "\t", report_map['1.0']['f1-score'],"\t",auc_score,"\t",auc_score_pr,"\t",total_time)
 
-    #create dataset for the validation of the ensemble and of the competitor
+    #create dataset for the validation of the ensemble and competitor
     ensemble_data_x = x_ensemble[0].copy()
     ensemble_data_y = y_ensemble[0].copy()
     for i in range(1,len(dataset_paths)):
